@@ -1,0 +1,1 @@
+import './modules/dummy.js';
