@@ -19,7 +19,7 @@ func NewDummyController(repo repositories.Repository) *DummyController {
 		Method:     http.MethodGet,
 		Route:      "/dummy",
 		Title:      "Dummy Extension Page",
-		ContentTpl: "content/dummy.html",
+		ContentTpl: "template/content/dummy.html",
 	}}
 	c.Self = c
 	return c
