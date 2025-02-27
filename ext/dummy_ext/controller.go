@@ -26,9 +26,10 @@ func NewDummyController(repo repositories.Repository) *DummyController {
 }
 
 func (c *DummyController) GetApiData(r *http.Request) map[string]any {
-	return map[string]any{
+	data := map[string]string{
 		"message": "Hello from DummyExtension!",
 	}
+	return map[string]any{"data": data}
 }
 
 func (c *DummyController) GetTplData(r *http.Request) map[string]any {
