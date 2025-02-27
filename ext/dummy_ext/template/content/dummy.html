@@ -1,8 +1,9 @@
 {{define "content"}}
-<link rel="stylesheet" href="/static/main_ext/styles/styles.css">
+<link rel="stylesheet" href="/static/dummy_ext/styles/styles.css">
 <div class="dummy">
     <div>{{.Title}}</div>
     <div>Dummy content.</div>
     <div id="dummy-js-replaced">API data (should be replaced by JS)</div>
 </div>
+<script type="module" src="/static/dummy_ext/scripts/index.js"></script>
 {{end}}
